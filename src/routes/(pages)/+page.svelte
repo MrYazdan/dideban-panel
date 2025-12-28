@@ -232,7 +232,7 @@
               </div>
 
               <div
-                class="border-[#00bc7d]/20 flex justify-start items-start p-3 rounded-[14px] border w-full h-full relative overflow-hidden group">
+                class="border-[#00bc7d]/20 flex justify-start items-start p-3 rounded-[14px] border w-full h-full relative overflow-hidden group bg-linear-to-bl from-[#22c55e]/5">
                 <div
                   class="absolute -top-5 end-0 size-0 rounded-full group-hover:top-5 group-hover:end-5 transition-all duration-700"
                   style="box-shadow: 0 0 100px 30px rgb(0,212,146,0.8);">
@@ -266,15 +266,15 @@
                 </div>
               </div>
               <div
-                class="border-[#fdc700]/20 flex justify-start items-start p-3 rounded-[14px] border w-full h-full relative overflow-hidden group">
+                class="border-[#fdc700]/20 flex justify-start items-start p-3 rounded-[14px] border w-full h-full relative overflow-hidden group bg-linear-to-bl from-[#F0B100]/5">
                 <div
                   class="absolute -top-5 end-0 size-0 rounded-full group-hover:top-5 group-hover:end-5 transition-all duration-700"
                   style="box-shadow: 0 0 100px 30px rgb(252,200,0);">
                   <div class="w-full h-full bg-white/5"></div>
                 </div>
                 <div
-                  class="size-7 flex justify-center items-center rounded-full border border-[#fbbc05]/20 bg-[#F0B100]/10 mb-3">
-                  <img src="/icons/warning.svg" alt="warning" />
+                  class="size-6.75 flex justify-center items-center rounded-full border border-[#fbbc05]/20 bg-[#F0B100]/10 mb-3">
+                  <img width="15" src="/icons/warning.svg" alt="warning" />
                 </div>
                 <div
                   class="text-white absolute start-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5">
@@ -310,7 +310,7 @@
               </div>
 
               <div
-                class="border-[#00bc7d]/20 flex justify-start items-start p-3 rounded-[14px] border w-full h-full relative overflow-hidden group">
+                class="border-[#00bc7d]/20 flex justify-start items-start p-3 rounded-[14px] border w-full h-full relative overflow-hidden group bg-linear-to-bl from-[#22c55e]/5">
                 <div
                   class="absolute -top-5 end-0 size-0 rounded-full group-hover:top-5 group-hover:end-5 transition-all duration-700"
                   style="box-shadow: 0 0 100px 30px rgb(0,212,146,0.8);">
@@ -344,15 +344,15 @@
                 </div>
               </div>
               <div
-                class="border-[#fdc700]/20 flex justify-start items-start p-3 rounded-[14px] border w-full h-full relative overflow-hidden group">
+                class="border-[#fdc700]/20 flex justify-start items-start p-3 rounded-[14px] border w-full h-full relative overflow-hidden group bg-linear-to-bl from-[#F0B100]/5">
                 <div
                   class="absolute -top-5 end-0 size-0 rounded-full group-hover:top-5 group-hover:end-5 transition-all duration-700"
                   style="box-shadow: 0 0 100px 30px rgb(252,200,0);">
                   <div class="w-full h-full bg-white/5"></div>
                 </div>
                 <div
-                  class="size-7 flex justify-center items-center rounded-full border border-[#fbbc05]/20 bg-[#F0B100]/10 mb-3">
-                  <img src="/icons/warning.svg" alt="warning" />
+                  class="size-6.75 flex justify-center items-center rounded-full border border-[#fbbc05]/20 bg-[#F0B100]/10 mb-3">
+                  <img width="15" src="/icons/warning.svg" alt="warning" />
                 </div>
                 <div
                   class="text-white absolute start-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5">
@@ -368,19 +368,19 @@
 
     <div
       class="w-full p-6 rounded-[14px] bg-[#FFFFFF] dark:bg-[#0D0D0D] border border-[#0D0D0D]/5 dark:border-white/5">
-      <div class="w-full flex justify-between items-start pb-8">
+      <div class="w-full flex justify-between items-start pb-6">
         <div class="flex flex-col gap-1">
           <span class="text-xl dark:text-white">Machine Status</span>
           <span class="text-sm text-[#99a1af]">Infrastructure Nodes & Cluster Health</span>
         </div>
         <div
-          class="w-12 h-10 flex justify-center items-center bg-[#22c55e]/10 rounded-lg text-xl text-[#10b981]">
+          class="w-12 h-10 flex justify-center items-center bg-[#22c55e]/10 rounded-lg text-xl text-[#10b981] cursor-pointer">
           +
         </div>
       </div>
-      <div class="w-full grid grid-cols-3 gap-7.5">
+      <div class="w-full grid grid-cols-3 gap-6">
         <div
-          class="w-122.75 h-37.75 border border-[#0D0D0D]/5 dark:border-white/5 rounded-[14px] flex flex-col py-8 gap-7 bg-[#F9FAFB] dark:bg-[#121212]">
+          class="border border-[#0D0D0D]/5 dark:border-white/5 rounded-[14px] flex flex-col py-6 gap-6 bg-[#F9FAFB] dark:bg-[#121212]">
           <div class="flex justify-start items-center px-4.25 gap-4">
             <div class="flex justify-center items-center size-12 rounded-2xl bg-[#6366f1]/10">
               <img src="/icons/container.svg" alt="container" />
@@ -395,22 +395,22 @@
               class="size-2.5 bg-[#22c55e] rounded-full ms-auto mb-auto mt-2">
             </div>
           </div>
-          <div class="w-full flex gap-1 pb-2 justify-center items-start">
+          <div class="w-full flex gap-1 justify-center items-start">
             {#each MACHINE.cpu.slice(-50) as detail}
-                            <div
-                                class="size-1.25 rounded-[1px] {detail.usage_percent
-                                    ? detail.usage_percent < 65
-                                        ? 'bg-green-700'
-                                        : detail.usage_percent < 85
-                                          ? 'bg-[#F97316]'
-                                          : 'bg-[#EF4444]'
-                                    : 'bg-[#FFFFFF]/5'}">
-                            </div>
-                        {/each}
+              <div
+                class="size-1.25 rounded-[1px] {detail.usage_percent
+                  ? detail.usage_percent < 65
+                    ? 'bg-green-700'
+                    : detail.usage_percent < 85
+                      ? 'bg-[#F97316]'
+                      : 'bg-[#EF4444]'
+                  : 'bg-[#FFFFFF]/5'}">
+              </div>
+            {/each}
           </div>
         </div>
         <div
-          class="w-122.75 h-37.75 border border-[#0D0D0D]/5 dark:border-white/5 rounded-[14px] flex flex-col py-8 gap-7 bg-[#F9FAFB] dark:bg-[#121212]">
+          class="border border-[#0D0D0D]/5 dark:border-white/5 rounded-[14px] flex flex-col py-6 gap-6 bg-[#F9FAFB] dark:bg-[#121212]">
           <div class="flex justify-start items-center px-4.25 gap-4">
             <div class="flex justify-center items-center size-12 rounded-2xl bg-[#6366f1]/10">
               <img src="/icons/container.svg" alt="container" />
@@ -425,22 +425,22 @@
               class="size-2.5 bg-[#22c55e] rounded-full ms-auto mb-auto mt-2">
             </div>
           </div>
-          <div class="w-full flex gap-1 pb-2 justify-center items-start">
+          <div class="w-full flex gap-1 justify-center items-start">
             {#each MACHINE.cpu.slice(-50) as detail}
-                            <div
-                                class="size-1.25 rounded-[1px] {detail.usage_percent
-                                    ? detail.usage_percent < 65
-                                        ? 'bg-green-700'
-                                        : detail.usage_percent < 85
-                                          ? 'bg-[#F97316]'
-                                          : 'bg-[#EF4444]'
-                                    : 'bg-[#FFFFFF]/5'}">
-                            </div>
-                        {/each}
+              <div
+                class="size-1.25 rounded-[1px] {detail.usage_percent
+                  ? detail.usage_percent < 65
+                    ? 'bg-green-700'
+                    : detail.usage_percent < 85
+                      ? 'bg-[#F97316]'
+                      : 'bg-[#EF4444]'
+                  : 'bg-[#FFFFFF]/5'}">
+              </div>
+            {/each}
           </div>
         </div>
         <div
-          class="w-122.75 h-37.75 border border-[#0D0D0D]/5 dark:border-white/5 rounded-[14px] flex flex-col py-8 gap-7 bg-[#F9FAFB] dark:bg-[#121212]">
+          class="border border-[#0D0D0D]/5 dark:border-white/5 rounded-[14px] flex flex-col py-6 gap-6 bg-[#F9FAFB] dark:bg-[#121212]">
           <div class="flex justify-start items-center px-4.25 gap-4">
             <div class="flex justify-center items-center size-12 rounded-2xl bg-[#6366f1]/10">
               <img src="/icons/container.svg" alt="container" />
@@ -455,22 +455,22 @@
               class="size-2.5 bg-[#22c55e] rounded-full ms-auto mb-auto mt-2">
             </div>
           </div>
-          <div class="w-full flex gap-1 pb-2 justify-center items-start">
+          <div class="w-full flex gap-1 justify-center items-start">
             {#each MACHINE.cpu.slice(-50) as detail}
-                            <div
-                                class="size-1.25 rounded-[1px] {detail.usage_percent
-                                    ? detail.usage_percent < 65
-                                        ? 'bg-green-700'
-                                        : detail.usage_percent < 85
-                                          ? 'bg-[#F97316]'
-                                          : 'bg-[#EF4444]'
-                                    : 'bg-[#FFFFFF]/5'}">
-                            </div>
-                        {/each}
+              <div
+                class="size-1.25 rounded-[1px] {detail.usage_percent
+                  ? detail.usage_percent < 65
+                    ? 'bg-green-700'
+                    : detail.usage_percent < 85
+                      ? 'bg-[#F97316]'
+                      : 'bg-[#EF4444]'
+                  : 'bg-[#FFFFFF]/5'}">
+              </div>
+            {/each}
           </div>
         </div>
         <div
-          class="w-122.75 h-37.75 border border-[#F97316]/15 rounded-[14px] flex flex-col py-8 gap-7 bg-[#F97316]/5">
+          class="border border-[#F97316]/15 rounded-[14px] flex flex-col py-6 gap-7 bg-[#F97316]/5">
           <div class="flex justify-start items-center px-4.25 gap-4">
             <div class="flex justify-center items-center size-12 rounded-2xl bg-[#F97316]/10">
               <img src="/icons/memory.svg" alt="memory" />
@@ -485,22 +485,22 @@
               class="size-2.5 bg-[#F97316] rounded-full ms-auto mb-auto mt-2">
             </div>
           </div>
-          <div class="w-full flex gap-1 pb-2 justify-center items-start">
+          <div class="w-full flex gap-1 justify-center items-start">
             {#each MACHINE.cpu.slice(-50) as detail}
-                            <div
-                                class="size-1.25 rounded-[1px] {detail.usage_percent
-                                    ? detail.usage_percent < 65
-                                        ? 'bg-green-700'
-                                        : detail.usage_percent < 85
-                                          ? 'bg-[#F97316]'
-                                          : 'bg-[#EF4444]'
-                                    : 'bg-[#FFFFFF]/5'}">
-                            </div>
-                        {/each}
+              <div
+                class="size-1.25 rounded-[1px] {detail.usage_percent
+                  ? detail.usage_percent < 65
+                    ? 'bg-green-700'
+                    : detail.usage_percent < 85
+                      ? 'bg-[#F97316]'
+                      : 'bg-[#EF4444]'
+                  : 'bg-[#FFFFFF]/5'}">
+              </div>
+            {/each}
           </div>
         </div>
         <div
-          class="w-122.75 h-37.75 border border-[#EF4444]/15 rounded-[14px] flex flex-col py-8 gap-7 bg-[#EF4444]/5">
+          class="border border-[#EF4444]/15 rounded-[14px] flex flex-col py-6 gap-7 bg-[#EF4444]/5">
           <div class="flex justify-start items-center px-4.25 gap-4">
             <div class="flex justify-center items-center size-12 rounded-2xl bg-[#EF4444]/10">
               <img src="/icons/memory-red.svg" alt="container" />
@@ -515,22 +515,22 @@
               class="size-2.5 bg-[#EF4444] rounded-full ms-auto mb-auto mt-2">
             </div>
           </div>
-          <div class="w-full flex gap-1 pb-2 justify-center items-start">
+          <div class="w-full flex gap-1 justify-center items-start">
             {#each MACHINE.cpu.slice(-50) as detail}
-                            <div
-                                class="size-1.25 rounded-[1px] {detail.usage_percent
-                                    ? detail.usage_percent < 65
-                                        ? 'bg-green-700'
-                                        : detail.usage_percent < 85
-                                          ? 'bg-[#F97316]'
-                                          : 'bg-[#EF4444]'
-                                    : 'bg-[#FFFFFF]/5'}">
-                            </div>
-                        {/each}
+              <div
+                class="size-1.25 rounded-[1px] {detail.usage_percent
+                  ? detail.usage_percent < 65
+                    ? 'bg-green-700'
+                    : detail.usage_percent < 85
+                      ? 'bg-[#F97316]'
+                      : 'bg-[#EF4444]'
+                  : 'bg-[#FFFFFF]/5'}">
+              </div>
+            {/each}
           </div>
         </div>
         <div
-          class="w-122.75 h-37.75 border border-[#0D0D0D]/5 dark:border-white/5 rounded-[14px] flex flex-col py-8 gap-7 bg-[#F9FAFB] dark:bg-[#121212]">
+          class="border border-[#0D0D0D]/5 dark:border-white/5 rounded-[14px] flex flex-col py-6 gap-6 bg-[#F9FAFB] dark:bg-[#121212]">
           <div class="flex justify-start items-center px-4.25 gap-4">
             <div class="flex justify-center items-center size-12 rounded-2xl bg-[#6366f1]/10">
               <img src="/icons/container.svg" alt="container" />
@@ -545,22 +545,22 @@
               class="size-2.5 bg-[#22c55e] rounded-full ms-auto mb-auto mt-2">
             </div>
           </div>
-          <div class="w-full flex gap-1 pb-2 justify-center items-start">
+          <div class="w-full flex gap-1 justify-center items-start">
             {#each MACHINE.cpu.slice(-50) as detail}
-                            <div
-                                class="size-1.25 rounded-[1px] {detail.usage_percent
-                                    ? detail.usage_percent < 65
-                                        ? 'bg-green-700'
-                                        : detail.usage_percent < 85
-                                          ? 'bg-[#F97316]'
-                                          : 'bg-[#EF4444]'
-                                    : 'bg-[#FFFFFF]/5'}">
-                            </div>
-                        {/each}
+              <div
+                class="size-1.25 rounded-[1px] {detail.usage_percent
+                  ? detail.usage_percent < 65
+                    ? 'bg-green-700'
+                    : detail.usage_percent < 85
+                      ? 'bg-[#F97316]'
+                      : 'bg-[#EF4444]'
+                  : 'bg-[#FFFFFF]/5'}">
+              </div>
+            {/each}
           </div>
         </div>
         <div
-          class="w-122.75 h-37.75 border border-[#0D0D0D]/5 dark:border-white/5 rounded-[14px] flex flex-col py-8 gap-7 bg-[#F9FAFB] dark:bg-[#121212]">
+          class="border border-[#0D0D0D]/5 dark:border-white/5 rounded-[14px] flex flex-col py-6 gap-6 bg-[#F9FAFB] dark:bg-[#121212]">
           <div class="flex justify-start items-center px-4.25 gap-4">
             <div class="flex justify-center items-center size-12 rounded-2xl bg-[#6366f1]/10">
               <img src="/icons/container.svg" alt="container" />
@@ -575,22 +575,22 @@
               class="size-2.5 bg-[#22c55e] rounded-full ms-auto mb-auto mt-2">
             </div>
           </div>
-          <div class="w-full flex gap-1 pb-2 justify-center items-start">
+          <div class="w-full flex gap-1 justify-center items-start">
             {#each MACHINE.cpu.slice(-50) as detail}
-                            <div
-                                class="size-1.25 rounded-[1px] {detail.usage_percent
-                                    ? detail.usage_percent < 65
-                                        ? 'bg-green-700'
-                                        : detail.usage_percent < 85
-                                          ? 'bg-[#F97316]'
-                                          : 'bg-[#EF4444]'
-                                    : 'bg-[#FFFFFF]/5'}">
-                            </div>
-                        {/each}
+              <div
+                class="size-1.25 rounded-[1px] {detail.usage_percent
+                  ? detail.usage_percent < 65
+                    ? 'bg-green-700'
+                    : detail.usage_percent < 85
+                      ? 'bg-[#F97316]'
+                      : 'bg-[#EF4444]'
+                  : 'bg-[#FFFFFF]/5'}">
+              </div>
+            {/each}
           </div>
         </div>
         <div
-          class="w-122.75 h-37.75 border border-[#0D0D0D]/5 dark:border-white/5 rounded-[14px] flex flex-col py-8 gap-7 bg-[#F9FAFB] dark:bg-[#121212]">
+          class="border border-[#0D0D0D]/5 dark:border-white/5 rounded-[14px] flex flex-col py-6 gap-6 bg-[#F9FAFB] dark:bg-[#121212]">
           <div class="flex justify-start items-center px-4.25 gap-4">
             <div class="flex justify-center items-center size-12 rounded-2xl bg-[#6366f1]/10">
               <img src="/icons/container.svg" alt="container" />
@@ -605,22 +605,22 @@
               class="size-2.5 bg-[#22c55e] rounded-full ms-auto mb-auto mt-2">
             </div>
           </div>
-          <div class="w-full flex gap-1 pb-2 justify-center items-start">
+          <div class="w-full flex gap-1 justify-center items-start">
             {#each MACHINE.cpu.slice(-50) as detail}
-                            <div
-                                class="size-1.25 rounded-[1px] {detail.usage_percent
-                                    ? detail.usage_percent < 65
-                                        ? 'bg-green-700'
-                                        : detail.usage_percent < 85
-                                          ? 'bg-[#F97316]'
-                                          : 'bg-[#EF4444]'
-                                    : 'bg-[#FFFFFF]/5'}">
-                            </div>
-                        {/each}
+              <div
+                class="size-1.25 rounded-[1px] {detail.usage_percent
+                  ? detail.usage_percent < 65
+                    ? 'bg-green-700'
+                    : detail.usage_percent < 85
+                      ? 'bg-[#F97316]'
+                      : 'bg-[#EF4444]'
+                  : 'bg-[#FFFFFF]/5'}">
+              </div>
+            {/each}
           </div>
         </div>
         <div
-          class="w-122.75 h-37.75 border border-[#0D0D0D]/5 dark:border-white/5 rounded-[14px] flex flex-col py-8 gap-7 bg-[#F9FAFB] dark:bg-[#121212]">
+          class="border border-[#0D0D0D]/5 dark:border-white/5 rounded-[14px] flex flex-col py-6 gap-6 bg-[#F9FAFB] dark:bg-[#121212]">
           <div class="flex justify-start items-center px-4.25 gap-4">
             <div class="flex justify-center items-center size-12 rounded-2xl bg-[#6366f1]/10">
               <img src="/icons/container.svg" alt="container" />
@@ -635,37 +635,37 @@
               class="size-2.5 bg-[#22c55e] rounded-full ms-auto mb-auto mt-2">
             </div>
           </div>
-          <div class="w-full flex gap-1 pb-2 justify-center items-start">
+          <div class="w-full flex gap-1 justify-center items-start">
             {#each MACHINE.cpu.slice(-50) as detail}
-                            <div
-                                class="size-1.25 rounded-[1px] {detail.usage_percent
-                                    ? detail.usage_percent < 65
-                                        ? 'bg-green-700'
-                                        : detail.usage_percent < 85
-                                          ? 'bg-[#F97316]'
-                                          : 'bg-[#EF4444]'
-                                    : 'bg-[#FFFFFF]/5'}">
-                            </div>
-                        {/each}
+              <div
+                class="size-1.25 rounded-[1px] {detail.usage_percent
+                  ? detail.usage_percent < 65
+                    ? 'bg-green-700'
+                    : detail.usage_percent < 85
+                      ? 'bg-[#F97316]'
+                      : 'bg-[#EF4444]'
+                  : 'bg-[#FFFFFF]/5'}">
+              </div>
+            {/each}
           </div>
         </div>
       </div>
     </div>
     <div
       class="w-full p-6 rounded-[14px] bg-[#FFFFFF] dark:bg-[#0D0D0D] border border-[#0D0D0D]/5 dark:border-white/5">
-      <div class="w-full flex justify-between items-start pb-8">
+      <div class="w-full flex justify-between items-start pb-6">
         <div class="flex flex-col gap-1">
           <span class="text-xl dark:text-white">Application Status</span>
           <span class="text-sm text-[#99a1af]">Microservices Health & Availability</span>
         </div>
         <div
-          class="w-12 h-10 flex justify-center items-center bg-[#22c55e]/10 rounded-lg text-xl text-[#10b981]">
+          class="w-12 h-10 flex justify-center items-center bg-[#22c55e]/10 rounded-lg text-xl text-[#10b981] cursor-pointer">
           +
         </div>
       </div>
-      <div class="w-full grid grid-cols-3 gap-7.5">
+      <div class="w-full grid grid-cols-3 gap-6">
         <div
-          class="w-122.75 h-37.75 border border-[#0D0D0D]/5 dark:border-white/5 rounded-[14px] flex flex-col py-8 gap-7 bg-[#F9FAFB] dark:bg-[#121212]">
+          class="border border-[#0D0D0D]/5 dark:border-white/5 rounded-[14px] flex flex-col py-6 gap-6 bg-[#F9FAFB] dark:bg-[#121212]">
           <div class="flex justify-start items-center px-4.25 gap-4">
             <div class="flex justify-center items-center size-12 rounded-2xl bg-[#6366f1]/10">
               <img src="/icons/container.svg" alt="container" />
@@ -680,22 +680,22 @@
               class="size-2.5 bg-[#22c55e] rounded-full ms-auto mb-auto mt-2">
             </div>
           </div>
-          <div class="w-full flex gap-1 pb-2 justify-center items-start">
+          <div class="w-full flex gap-1 justify-center items-start">
             {#each MACHINE.cpu.slice(-50) as detail}
-                            <div
-                                class="size-1.25 rounded-[1px] {detail.usage_percent
-                                    ? detail.usage_percent < 65
-                                        ? 'bg-green-700'
-                                        : detail.usage_percent < 85
-                                          ? 'bg-[#F97316]'
-                                          : 'bg-[#EF4444]'
-                                    : 'bg-[#FFFFFF]/5'}">
-                            </div>
-                        {/each}
+              <div
+                class="size-1.25 rounded-[1px] {detail.usage_percent
+                  ? detail.usage_percent < 65
+                    ? 'bg-green-700'
+                    : detail.usage_percent < 85
+                      ? 'bg-[#F97316]'
+                      : 'bg-[#EF4444]'
+                  : 'bg-[#FFFFFF]/5'}">
+              </div>
+            {/each}
           </div>
         </div>
         <div
-          class="w-122.75 h-37.75 border border-[#0D0D0D]/5 dark:border-white/5 rounded-[14px] flex flex-col py-8 gap-7 bg-[#F9FAFB] dark:bg-[#121212]">
+          class="border border-[#0D0D0D]/5 dark:border-white/5 rounded-[14px] flex flex-col py-6 gap-6 bg-[#F9FAFB] dark:bg-[#121212]">
           <div class="flex justify-start items-center px-4.25 gap-4">
             <div class="flex justify-center items-center size-12 rounded-2xl bg-[#6366f1]/10">
               <img src="/icons/container.svg" alt="container" />
@@ -710,22 +710,22 @@
               class="size-2.5 bg-[#22c55e] rounded-full ms-auto mb-auto mt-2">
             </div>
           </div>
-          <div class="w-full flex gap-1 pb-2 justify-center items-start">
+          <div class="w-full flex gap-1 justify-center items-start">
             {#each MACHINE.cpu.slice(-50) as detail}
-                            <div
-                                class="size-1.25 rounded-[1px] {detail.usage_percent
-                                    ? detail.usage_percent < 65
-                                        ? 'bg-green-700'
-                                        : detail.usage_percent < 85
-                                          ? 'bg-[#F97316]'
-                                          : 'bg-[#EF4444]'
-                                    : 'bg-[#FFFFFF]/5'}">
-                            </div>
-                        {/each}
+              <div
+                class="size-1.25 rounded-[1px] {detail.usage_percent
+                  ? detail.usage_percent < 65
+                    ? 'bg-green-700'
+                    : detail.usage_percent < 85
+                      ? 'bg-[#F97316]'
+                      : 'bg-[#EF4444]'
+                  : 'bg-[#FFFFFF]/5'}">
+              </div>
+            {/each}
           </div>
         </div>
         <div
-          class="w-122.75 h-37.75 border border-[#0D0D0D]/5 dark:border-white/5 rounded-[14px] flex flex-col py-8 gap-7 bg-[#F9FAFB] dark:bg-[#121212]">
+          class="border border-[#0D0D0D]/5 dark:border-white/5 rounded-[14px] flex flex-col py-6 gap-6 bg-[#F9FAFB] dark:bg-[#121212]">
           <div class="flex justify-start items-center px-4.25 gap-4">
             <div class="flex justify-center items-center size-12 rounded-2xl bg-[#6366f1]/10">
               <img src="/icons/container.svg" alt="container" />
@@ -740,22 +740,22 @@
               class="size-2.5 bg-[#22c55e] rounded-full ms-auto mb-auto mt-2">
             </div>
           </div>
-          <div class="w-full flex gap-1 pb-2 justify-center items-start">
+          <div class="w-full flex gap-1 justify-center items-start">
             {#each MACHINE.cpu.slice(-50) as detail}
-                            <div
-                                class="size-1.25 rounded-[1px] {detail.usage_percent
-                                    ? detail.usage_percent < 65
-                                        ? 'bg-green-700'
-                                        : detail.usage_percent < 85
-                                          ? 'bg-[#F97316]'
-                                          : 'bg-[#EF4444]'
-                                    : 'bg-[#FFFFFF]/5'}">
-                            </div>
-                        {/each}
+              <div
+                class="size-1.25 rounded-[1px] {detail.usage_percent
+                  ? detail.usage_percent < 65
+                    ? 'bg-green-700'
+                    : detail.usage_percent < 85
+                      ? 'bg-[#F97316]'
+                      : 'bg-[#EF4444]'
+                  : 'bg-[#FFFFFF]/5'}">
+              </div>
+            {/each}
           </div>
         </div>
         <div
-          class="w-122.75 h-37.75 border border-[#F97316]/15 rounded-[14px] flex flex-col py-8 gap-7 bg-[#F97316]/5">
+          class="border border-[#F97316]/15 rounded-[14px] flex flex-col py-6 gap-7 bg-[#F97316]/5">
           <div class="flex justify-start items-center px-4.25 gap-4">
             <div class="flex justify-center items-center size-12 rounded-2xl bg-[#F97316]/10">
               <img src="/icons/memory.svg" alt="memory" />
@@ -770,22 +770,22 @@
               class="size-2.5 bg-[#F97316] rounded-full ms-auto mb-auto mt-2">
             </div>
           </div>
-          <div class="w-full flex gap-1 pb-2 justify-center items-start">
+          <div class="w-full flex gap-1 justify-center items-start">
             {#each MACHINE.cpu.slice(-50) as detail}
-                            <div
-                                class="size-1.25 rounded-[1px] {detail.usage_percent
-                                    ? detail.usage_percent < 65
-                                        ? 'bg-green-700'
-                                        : detail.usage_percent < 85
-                                          ? 'bg-[#F97316]'
-                                          : 'bg-[#EF4444]'
-                                    : 'bg-[#FFFFFF]/5'}">
-                            </div>
-                        {/each}
+              <div
+                class="size-1.25 rounded-[1px] {detail.usage_percent
+                  ? detail.usage_percent < 65
+                    ? 'bg-green-700'
+                    : detail.usage_percent < 85
+                      ? 'bg-[#F97316]'
+                      : 'bg-[#EF4444]'
+                  : 'bg-[#FFFFFF]/5'}">
+              </div>
+            {/each}
           </div>
         </div>
         <div
-          class="w-122.75 h-37.75 border border-[#EF4444]/15 rounded-[14px] flex flex-col py-8 gap-7 bg-[#EF4444]/5">
+          class="border border-[#EF4444]/15 rounded-[14px] flex flex-col py-6 gap-7 bg-[#EF4444]/5">
           <div class="flex justify-start items-center px-4.25 gap-4">
             <div class="flex justify-center items-center size-12 rounded-2xl bg-[#EF4444]/10">
               <img src="/icons/memory-red.svg" alt="container" />
@@ -800,22 +800,22 @@
               class="size-2.5 bg-[#EF4444] rounded-full ms-auto mb-auto mt-2">
             </div>
           </div>
-          <div class="w-full flex gap-1 pb-2 justify-center items-start">
+          <div class="w-full flex gap-1 justify-center items-start">
             {#each MACHINE.cpu.slice(-50) as detail}
-                            <div
-                                class="size-1.25 rounded-[1px] {detail.usage_percent
-                                    ? detail.usage_percent < 65
-                                        ? 'bg-green-700'
-                                        : detail.usage_percent < 85
-                                          ? 'bg-[#F97316]'
-                                          : 'bg-[#EF4444]'
-                                    : 'bg-[#FFFFFF]/5'}">
-                            </div>
-                        {/each}
+              <div
+                class="size-1.25 rounded-[1px] {detail.usage_percent
+                  ? detail.usage_percent < 65
+                    ? 'bg-green-700'
+                    : detail.usage_percent < 85
+                      ? 'bg-[#F97316]'
+                      : 'bg-[#EF4444]'
+                  : 'bg-[#FFFFFF]/5'}">
+              </div>
+            {/each}
           </div>
         </div>
         <div
-          class="w-122.75 h-37.75 border border-[#0D0D0D]/5 dark:border-white/5 rounded-[14px] flex flex-col py-8 gap-7 bg-[#F9FAFB] dark:bg-[#121212]">
+          class="border border-[#0D0D0D]/5 dark:border-white/5 rounded-[14px] flex flex-col py-6 gap-6 bg-[#F9FAFB] dark:bg-[#121212]">
           <div class="flex justify-start items-center px-4.25 gap-4">
             <div class="flex justify-center items-center size-12 rounded-2xl bg-[#6366f1]/10">
               <img src="/icons/container.svg" alt="container" />
@@ -830,22 +830,22 @@
               class="size-2.5 bg-[#22c55e] rounded-full ms-auto mb-auto mt-2">
             </div>
           </div>
-          <div class="w-full flex gap-1 pb-2 justify-center items-start">
+          <div class="w-full flex gap-1 justify-center items-start">
             {#each MACHINE.cpu.slice(-50) as detail}
-                            <div
-                                class="size-1.25 rounded-[1px] {detail.usage_percent
-                                    ? detail.usage_percent < 65
-                                        ? 'bg-green-700'
-                                        : detail.usage_percent < 85
-                                          ? 'bg-[#F97316]'
-                                          : 'bg-[#EF4444]'
-                                    : 'bg-[#FFFFFF]/5'}">
-                            </div>
-                        {/each}
+              <div
+                class="size-1.25 rounded-[1px] {detail.usage_percent
+                  ? detail.usage_percent < 65
+                    ? 'bg-green-700'
+                    : detail.usage_percent < 85
+                      ? 'bg-[#F97316]'
+                      : 'bg-[#EF4444]'
+                  : 'bg-[#FFFFFF]/5'}">
+              </div>
+            {/each}
           </div>
         </div>
         <div
-          class="w-122.75 h-37.75 border border-[#0D0D0D]/5 dark:border-white/5 rounded-[14px] flex flex-col py-8 gap-7 bg-[#F9FAFB] dark:bg-[#121212]">
+          class="border border-[#0D0D0D]/5 dark:border-white/5 rounded-[14px] flex flex-col py-6 gap-6 bg-[#F9FAFB] dark:bg-[#121212]">
           <div class="flex justify-start items-center px-4.25 gap-4">
             <div class="flex justify-center items-center size-12 rounded-2xl bg-[#6366f1]/10">
               <img src="/icons/container.svg" alt="container" />
@@ -860,22 +860,22 @@
               class="size-2.5 bg-[#22c55e] rounded-full ms-auto mb-auto mt-2">
             </div>
           </div>
-          <div class="w-full flex gap-1 pb-2 justify-center items-start">
+          <div class="w-full flex gap-1 justify-center items-start">
             {#each MACHINE.cpu.slice(-50) as detail}
-                            <div
-                                class="size-1.25 rounded-[1px] {detail.usage_percent
-                                    ? detail.usage_percent < 65
-                                        ? 'bg-green-700'
-                                        : detail.usage_percent < 85
-                                          ? 'bg-[#F97316]'
-                                          : 'bg-[#EF4444]'
-                                    : 'bg-[#FFFFFF]/5'}">
-                            </div>
-                        {/each}
+              <div
+                class="size-1.25 rounded-[1px] {detail.usage_percent
+                  ? detail.usage_percent < 65
+                    ? 'bg-green-700'
+                    : detail.usage_percent < 85
+                      ? 'bg-[#F97316]'
+                      : 'bg-[#EF4444]'
+                  : 'bg-[#FFFFFF]/5'}">
+              </div>
+            {/each}
           </div>
         </div>
         <div
-          class="w-122.75 h-37.75 border border-[#0D0D0D]/5 dark:border-white/5 rounded-[14px] flex flex-col py-8 gap-7 bg-[#F9FAFB] dark:bg-[#121212]">
+          class="border border-[#0D0D0D]/5 dark:border-white/5 rounded-[14px] flex flex-col py-6 gap-6 bg-[#F9FAFB] dark:bg-[#121212]">
           <div class="flex justify-start items-center px-4.25 gap-4">
             <div class="flex justify-center items-center size-12 rounded-2xl bg-[#6366f1]/10">
               <img src="/icons/container.svg" alt="container" />
@@ -890,22 +890,22 @@
               class="size-2.5 bg-[#22c55e] rounded-full ms-auto mb-auto mt-2">
             </div>
           </div>
-          <div class="w-full flex gap-1 pb-2 justify-center items-start">
+          <div class="w-full flex gap-1 justify-center items-start">
             {#each MACHINE.cpu.slice(-50) as detail}
-                            <div
-                                class="size-1.25 rounded-[1px] {detail.usage_percent
-                                    ? detail.usage_percent < 65
-                                        ? 'bg-green-700'
-                                        : detail.usage_percent < 85
-                                          ? 'bg-[#F97316]'
-                                          : 'bg-[#EF4444]'
-                                    : 'bg-[#FFFFFF]/5'}">
-                            </div>
-                        {/each}
+              <div
+                class="size-1.25 rounded-[1px] {detail.usage_percent
+                  ? detail.usage_percent < 65
+                    ? 'bg-green-700'
+                    : detail.usage_percent < 85
+                      ? 'bg-[#F97316]'
+                      : 'bg-[#EF4444]'
+                  : 'bg-[#FFFFFF]/5'}">
+              </div>
+            {/each}
           </div>
         </div>
         <div
-          class="w-122.75 h-37.75 border border-[#0D0D0D]/5 dark:border-white/5 rounded-[14px] flex flex-col py-8 gap-7 bg-[#F9FAFB] dark:bg-[#121212]">
+          class="border border-[#0D0D0D]/5 dark:border-white/5 rounded-[14px] flex flex-col py-6 gap-6 bg-[#F9FAFB] dark:bg-[#121212]">
           <div class="flex justify-start items-center px-4.25 gap-4">
             <div class="flex justify-center items-center size-12 rounded-2xl bg-[#6366f1]/10">
               <img src="/icons/container.svg" alt="container" />
@@ -920,18 +920,18 @@
               class="size-2.5 bg-[#22c55e] rounded-full ms-auto mb-auto mt-2">
             </div>
           </div>
-          <div class="w-full flex gap-1 pb-2 justify-center items-start">
+          <div class="w-full flex gap-1 justify-center items-start">
             {#each MACHINE.cpu.slice(-50) as detail}
-                            <div
-                                class="size-1.25 rounded-[1px] {detail.usage_percent
-                                    ? detail.usage_percent < 65
-                                        ? 'bg-green-700'
-                                        : detail.usage_percent < 85
-                                          ? 'bg-[#F97316]'
-                                          : 'bg-[#EF4444]'
-                                    : 'bg-[#FFFFFF]/5'}">
-                            </div>
-                        {/each}
+              <div
+                class="size-1.25 rounded-[1px] {detail.usage_percent
+                  ? detail.usage_percent < 65
+                    ? 'bg-green-700'
+                    : detail.usage_percent < 85
+                      ? 'bg-[#F97316]'
+                      : 'bg-[#EF4444]'
+                  : 'bg-[#FFFFFF]/5'}">
+              </div>
+            {/each}
           </div>
         </div>
       </div>
@@ -939,18 +939,18 @@
 
     <div
       class="w-full p-6 rounded-[14px] bg-white dark:bg-[#0D0D0D] border border-[#0D0D0D]/5 dark:border-white/5">
-      <div class="w-full flex justify-between items-start pb-8">
+      <div class="w-full flex justify-between items-start pb-6">
         <div class="flex flex-col gap-1">
           <span class="text-xl dark:text-white">Agents Status</span>
           <span class="text-sm text-[#99a1af]">Microservices Health & Availability</span>
         </div>
         <div
-          class="w-12 h-10 flex justify-center items-center bg-[#22c55e]/10 rounded-lg text-xl text-[#10b981]">
+          class="w-12 h-10 flex justify-center items-center bg-[#22c55e]/10 rounded-lg text-xl text-[#10b981] cursor-pointer">
           <img width="17" src="/icons/refresh-green.svg" alt="refresh" />
         </div>
       </div>
 
-      <div class="w-full grid grid-cols-3 gap-7.5">
+      <div class="w-full grid grid-cols-3 gap-6">
         <div
           class="w-full p-5 rounded-xl bg-[#F9FAFB] dark:bg-[#121212] border border-[#0D0D0D]/5 dark:border-white/5 flex flex-col gap-4">
           <div class="flex w-full justify-start items-center gap-4">
@@ -969,7 +969,7 @@
               <span class="text-xs text-[#00d492]">Active</span>
             </div>
           </div>
-          <div class="w-full h-36.25 flex flex-col gap-3">
+          <div class="w-full h-36.25 flex flex-col justify-between gap-3">
             <div class="flex flex-col gap-1.5 justify-center">
               <div class="flex justify-between items-start text-xs">
                 <span class="text-[#99a1af]">CPU</span>
@@ -1055,7 +1055,7 @@
               <span class="text-xs text-[#00d492]">Active</span>
             </div>
           </div>
-          <div class="w-full h-36.25 flex flex-col gap-3">
+          <div class="w-full h-36.25 flex flex-col justify-between gap-3">
             <div class="flex flex-col gap-1.5 justify-center">
               <div class="flex justify-between items-start text-xs">
                 <span class="text-[#99a1af]">CPU</span>
@@ -1141,7 +1141,7 @@
               <span class="text-xs text-[#00d492]">Active</span>
             </div>
           </div>
-          <div class="w-full h-36.25 flex flex-col gap-3">
+          <div class="w-full h-36.25 flex flex-col justify-between gap-3">
             <div class="flex flex-col gap-1.5 justify-center">
               <div class="flex justify-between items-start text-xs">
                 <span class="text-[#99a1af]">CPU</span>
@@ -1227,7 +1227,7 @@
               <span class="text-xs text-[#EF4444]">Active</span>
             </div>
           </div>
-          <div class="w-full h-36.25 flex flex-col gap-3">
+          <div class="w-full h-36.25 flex flex-col justify-between gap-3">
             <div class="flex flex-col gap-1.5 justify-center">
               <div class="flex justify-between items-start text-xs">
                 <span class="text-[#99a1af]">CPU</span>
@@ -1313,7 +1313,7 @@
               <span class="text-xs text-[#00d492]">Active</span>
             </div>
           </div>
-          <div class="w-full h-36.25 flex flex-col gap-3">
+          <div class="w-full h-36.25 flex flex-col justify-between gap-3">
             <div class="flex flex-col gap-1.5 justify-center">
               <div class="flex justify-between items-start text-xs">
                 <span class="text-[#99a1af]">CPU</span>
@@ -1399,7 +1399,7 @@
               <span class="text-xs text-[#F0B100]">Warning</span>
             </div>
           </div>
-          <div class="w-full h-36.25 flex flex-col gap-3">
+          <div class="w-full h-36.25 flex flex-col justify-between gap-3">
             <div class="flex flex-col gap-1.5 justify-center">
               <div class="flex justify-between items-start text-xs">
                 <span class="text-[#99a1af]">CPU</span>

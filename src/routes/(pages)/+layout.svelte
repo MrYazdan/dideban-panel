@@ -25,7 +25,7 @@
                 </button>
             </div>
             <div
-                class="ms-3 size-10.5 p-2.5 rounded-[14px] dark:bg-white/5 bg-[#0D0D0D]/5 border border-[#e5e7eb] dark:border-white/5 flex justify-center items-center">
+                class="ms-3 size-10.5 p-2.5 rounded-[14px] dark:bg-white/5 bg-[#0D0D0D]/5 border border-[#e5e7eb] dark:border-white/5 flex justify-center items-center cursor-pointer">
                 <div class="relative">
                     <div class="size-1 absolute -top-1 end-0 rounded-full bg-red-500"></div>
                     <img src="/icons/bell.png" alt="bell" />
@@ -64,7 +64,7 @@
                         <span class="text-xs text-[#99A1AF]">System Administrator</span>
                     </div>
 
-                    <div class="w-10.5 h-10 rounded-[10px] flex justify-center items-center bg-[#00b478]">
+                    <div class="w-10.5 h-10 rounded-[10px] flex justify-center items-center bg-[#00b478] cursor-pointer">
                         <img src="/icons/user.svg" alt="user" />
                     </div>
                 </div>
