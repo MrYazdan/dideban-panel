@@ -13,7 +13,6 @@ It is built with SvelteKit and designed to be fast, minimal, and production-read
 - SvelteKit
 - Vite
 - Tailwind CSS
-- Prettier + ESLint (formatting and linting)
 
 ---
 
