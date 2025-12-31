@@ -3,8 +3,8 @@
 </script>
 
 <div
-  class="w-full p-6 rounded-[14px] bg-[#FFFFFF] dark:bg-[#0D0D0D] border border-[#0D0D0D]/5 dark:border-white/5">
-  <div class="w-full flex justify-between items-start pb-4">
+  class="w-full relative rounded-[14px]  bg-[#FFFFFF] dark:bg-[#0D0D0D] border border-[#0D0D0D]/5 dark:border-white/5">
+  <div class="sticky top-0 p-6 border-b border-[#0D0D0D]/5 dark:border-[#222222] bg-[#FFFFFF] dark:bg-[#0D0D0D]  w-full flex justify-between items-start">
     <div class="flex flex-col gap-1">
       <span class="text-xl dark:text-white capitalize">{title}</span>
       <span class="text-sm text-[#99a1af] capitalize">{subtitle}</span>
@@ -15,7 +15,7 @@
     </div>
   </div>
 
-  <div class="w-full grid grid-cols-1 gap-6">
+  <div class="w-full grid grid-cols-1 gap-6 overflow-y-auto custom-scroll max-h-156 p-6">
     {#each data as item (item.id)}
       <div class="w-full flex flex-col gap-4 justify-center items-start">
         <h3 class="text-white text-lg capitalize">{item.agent_id}</h3>

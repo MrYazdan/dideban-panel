@@ -9,16 +9,17 @@
 </main>
 
 <style>
-  .custom-scroll::-webkit-scrollbar {
-    width: 3px;
+  :global(.custom-scroll::-webkit-scrollbar) {
+    width: 5px;
   }
 
-  .custom-scroll::-webkit-scrollbar-track {
-    background: transparent;
+  :global(.custom-scroll::-webkit-scrollbar-track) {
+    background: rgba(69, 74, 82, 0.3); 
+    border-radius: 9999px;
   }
 
-  .custom-scroll::-webkit-scrollbar-thumb {
-    background: #99a1af;
+  :global(.custom-scroll::-webkit-scrollbar-thumb) {
+    background: #454a52;
     border-radius: 9999px;
   }
 </style>
