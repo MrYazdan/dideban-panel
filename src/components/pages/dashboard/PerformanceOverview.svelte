@@ -135,7 +135,7 @@
               <span class="flex justify-center items-center text-sm text-[#6a7282]">CPU Usage</span>
             </div>
 
-            <span class="dark:text-white text-2xl"
+            <span class="dark:text-white text-lg"
               >{machine.cpu[machine.cpu.length - 1].usage_percent}%</span>
           </div>
           <div
@@ -147,7 +147,7 @@
               <span class="text-sm text-[#6a7282]">Memory Usage</span>
             </div>
 
-            <span class="dark:text-white text-2xl"
+            <span class="dark:text-white text-lg"
               >{machine.memory[machine.memory.length - 1].usage_percent}%</span>
           </div>
           <div
@@ -159,7 +159,7 @@
               <span class="text-sm text-[#6a7282]">Disk Usage</span>
             </div>
 
-            <span class="dark:text-white text-2xl"
+            <span class="dark:text-white text-lg"
               >{machine.disk[machine.disk.length - 1].usage_percent}%</span>
           </div>
         </div>

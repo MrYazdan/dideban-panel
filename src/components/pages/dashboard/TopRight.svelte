@@ -26,8 +26,8 @@
 
             <div
               class="text-white absolute start-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5">
-              <span class="text-base text-white">Total</span>
-              <span class="text-2xl text-[#3b82f6]">{item.total}</span>
+              <span class="text-base text-black dark:text-white">Total</span>
+              <span class="text-xl text-[#3b82f6]">{item.total}</span>
             </div>
           </div>
 
@@ -43,8 +43,8 @@
 
             <div
               class="text-white absolute start-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5">
-              <span class="text-base text-white">{item.up}</span>
-              <span class="text-2xl text-[#00bc7d]">12</span>
+              <span class="text-base text-black dark:text-white">{item.up}</span>
+              <span class="text-xl text-[#00bc7d]">12</span>
             </div>
           </div>
           <div
@@ -59,8 +59,8 @@
 
             <div
               class="text-white absolute start-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5">
-              <span class="text-base text-white">Down</span>
-              <span class="text-2xl text-[#F87171]">{item.down}</span>
+              <span class="text-base text-black dark:text-white">Down</span>
+              <span class="text-xl text-[#F87171]">{item.down}</span>
             </div>
           </div>
           <div
@@ -75,8 +75,8 @@
 
             <div
               class="text-white absolute start-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5">
-              <span class="text-base text-white">Warn</span>
-              <span class="text-2xl text-[#fdc700]">{item.warn}</span>
+              <span class="text-base text-black dark:text-white">Warn</span>
+              <span class="text-xl text-[#fdc700]">{item.warn}</span>
             </div>
           </div>
         </div>
