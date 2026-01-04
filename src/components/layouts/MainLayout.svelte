@@ -9,7 +9,7 @@
 </main>
 
 <style>
-  :global(.custom-scroll::-webkit-scrollbar) {
+  :global(.custom-scroll::-webkit-scrollbar) { 
     width: 4px;
   }
 

@@ -10,7 +10,7 @@
 <section class="w-full h-auto flex flex-col col-span-10">
   <!-- Content of dashboard page -->
   <div class="w-full flex flex-col gap-7.75 p-7.75 pt-3">
-    <div class="w-full h-103.25 flex gap-7.75">
+    <div class="w-full flex gap-7.75">
       <PerformanceOverview {theme} />
       <TopRight />
     </div>

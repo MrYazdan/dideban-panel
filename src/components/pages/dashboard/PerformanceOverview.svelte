@@ -37,7 +37,7 @@
 <svelte:window bind:innerWidth={width} />
 
 <div
-  class="w-[65%] h-full p-6 rounded-[14px] dark:bg-[#0D0D0D] bg-[#FFFFFF] border border-[#0D0D0D]/5 dark:border-white/5">
+  class="w-[65%] h-full p-6 pb-1.5 rounded-[14px] dark:bg-[#0D0D0D] bg-[#FFFFFF] border border-[#0D0D0D]/5 dark:border-white/5">
   <div class="flex flex-col gap-4 items-start justify-around">
     {#each MACHINES as machine (machine.id)}
       {#if isActive === machine.agent_id}
@@ -125,14 +125,14 @@
           </div>
         </div>
 
-        <div class="w-full flex justify-around items-center">
+        <div class="w-full flex justify-start items-center gap-3">
           <div
             class="h-full min-w-50 flex justify-center items-center gap-4 px-4 py-3 rounded-[10px] bg-[#F9FAFB] dark:bg-[#121212] border border-[#0D0D0D]/5 dark:border-white/5">
             <div class="w-full flex justify-start items-center gap-1.5">
               <span
                 style="box-shadow: 0 0 10px 1px #ad46ff;"
                 class="size-2.5 rounded-full bg-[#ad46ff]"></span>
-              <span class="flex justify-center items-center text-sm text-[#6a7282]">CPU Usage :</span>
+              <span class="flex justify-center items-center text-sm text-[#6a7282]">Average CPU Usage :</span>
             </div>
 
             <span class="dark:text-white text-lg"
@@ -144,7 +144,7 @@
               <span
                 style="box-shadow: 0 0 10px 1px #2b7fff;"
                 class="size-2.5 rounded-full bg-[#2b7fff]"></span>
-              <span class="text-sm text-[#6a7282]">Memory Usage :</span>
+              <span class="text-sm text-[#6a7282]">Average Memory Usage :</span>
             </div>
 
             <span class="dark:text-white text-lg"
@@ -156,7 +156,7 @@
               <span
                 style="box-shadow: 0 0 10px 1px #22c55e;"
                 class="size-2.5 rounded-full bg-[#00bc7d]"></span>
-              <span class="text-sm text-[#6a7282]">Disk Usage :</span>
+              <span class="text-sm text-[#6a7282]">Average Disk Usage :</span>
             </div>
 
             <span class="dark:text-white text-lg"
